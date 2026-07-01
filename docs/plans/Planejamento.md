@@ -1,0 +1,1 @@
+A ideia é fazer um app web em React em conjunto com o Firebase, sobre controle de metas e recaídas, o app deve conter tela de cadastro e login, um dashboard que permita adicionar e remover metas, visualizar as metas atuais e registrar recaídas, e uma aba de histórico para visualizar os registros de metas e recaídas
