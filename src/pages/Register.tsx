@@ -39,10 +39,10 @@ export function Register() {
   }
 
   return (
-    <div className="flex min-h-screen items-center justify-center px-4">
-      <div className="w-full max-w-md rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h1 className="text-2xl font-bold text-slate-900">Criar conta</h1>
-        <p className="mt-1 text-sm text-slate-600">Comece a acompanhar suas metas</p>
+    <div className="flex min-h-screen items-center justify-center px-4 dark:bg-slate-900">
+      <div className="w-full max-w-md rounded-xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-800">
+        <h1 className="text-2xl font-bold text-slate-900 dark:text-slate-100">Criar conta</h1>
+        <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">Comece a acompanhar suas metas</p>
 
         <form onSubmit={handleSubmit} className="mt-6 space-y-4">
           <Input
@@ -65,7 +65,7 @@ export function Register() {
           />
 
           {error && (
-            <p className="rounded-lg bg-red-50 px-3 py-2 text-sm text-red-700">
+            <p className="rounded-lg bg-red-50 px-3 py-2 text-sm text-red-700 dark:bg-red-950 dark:text-red-300">
               {error}
             </p>
           )}
@@ -75,9 +75,9 @@ export function Register() {
           </Button>
         </form>
 
-        <p className="mt-4 text-center text-sm text-slate-600">
+        <p className="mt-4 text-center text-sm text-slate-600 dark:text-slate-400">
           Já tem conta?{' '}
-          <Link to="/login" className="font-medium text-indigo-600 hover:text-indigo-700">
+          <Link to="/login" className="font-medium text-indigo-600 hover:text-indigo-700 dark:text-indigo-400 dark:hover:text-indigo-300">
             Entrar
           </Link>
         </p>

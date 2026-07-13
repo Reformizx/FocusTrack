@@ -33,10 +33,10 @@ export function Login() {
   }
 
   return (
-    <div className="flex min-h-screen items-center justify-center px-4">
-      <div className="w-full max-w-md rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h1 className="text-2xl font-bold text-slate-900">FocusTrack</h1>
-        <p className="mt-1 text-sm text-slate-600">Entre na sua conta</p>
+    <div className="flex min-h-screen items-center justify-center px-4 dark:bg-slate-900">
+      <div className="w-full max-w-md rounded-xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-800">
+        <h1 className="text-2xl font-bold text-slate-900 dark:text-slate-100">FocusTrack</h1>
+        <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">Entre na sua conta</p>
 
         <form onSubmit={handleSubmit} className="mt-6 space-y-4">
           <Input
@@ -57,7 +57,7 @@ export function Login() {
           />
 
           {error && (
-            <p className="rounded-lg bg-red-50 px-3 py-2 text-sm text-red-700">
+            <p className="rounded-lg bg-red-50 px-3 py-2 text-sm text-red-700 dark:bg-red-950 dark:text-red-300">
               {error}
             </p>
           )}
@@ -67,9 +67,9 @@ export function Login() {
           </Button>
         </form>
 
-        <p className="mt-4 text-center text-sm text-slate-600">
+        <p className="mt-4 text-center text-sm text-slate-600 dark:text-slate-400">
           Não tem conta?{' '}
-          <Link to="/register" className="font-medium text-indigo-600 hover:text-indigo-700">
+          <Link to="/register" className="font-medium text-indigo-600 hover:text-indigo-700 dark:text-indigo-400 dark:hover:text-indigo-300">
             Cadastre-se
           </Link>
         </p>
